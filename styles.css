@@ -48,7 +48,7 @@ header p {
 
 form {
   background-color: var(--gray-100);
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   height: 89.375rem;
 
   padding: 4rem;
@@ -186,4 +186,39 @@ legend {
 
 .checkbox-wrapper input:focus + label::before {
   outline: 2px solid var(--gray-500);
+}
+
+footer {
+  background-color: var(--off-white);
+  height: 8.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid var(--gray-300);
+  border-radius: 0 0 8px 8px;
+
+  margin-bottom: 5.625rem;
+}
+
+footer input {
+  color: var(--white);
+  background-color: var(--green-500);
+
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  line-height: 1.625rem;
+
+  width: 38rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  border: 0;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer input:hover {
+  background: var(--green-600);
 }
